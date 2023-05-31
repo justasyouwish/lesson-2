@@ -1,287 +1,85 @@
-// ----------------------------------//
-// ----------------------------------//
-// Вивід данних/ Ввід данних
-// ----------------------------------//
-// ----------------------------------//
+// Якщо змінна більше нуля - виведіть true, менше - false
+//Перевірте це на варіантах  1, 0, -3.
 
-// const message = "JavaScript is awesome!";
-
-// Виведення
-
-// alert(message);
-
-// console.log(message);
-
-// Отримання
-
-// confirm
-
-// const isConfirm = confirm("Please confirm reservation");
-// console.log(isConfirm);
-
-// const test = confirm("Yes or no?");
-// console.log(test);
-
-// prompt
-// const userName = prompt("Please enter your name:");
-// console.log(userName);
-
-// const number = prompt("Please enter number");
-// console.log(number);
-
-// ----------------------------------//
-// ----------------------------------//
-// Перетворення типу
-// ----------------------------------//
-// ----------------------------------//
-
-// const value = prompt("Please enter a number!");
-// console.log(typeof value); // 'string'
-// console.log(value); // '5'
-
-// let value;
-
-// ---String--- //
-
-// value = false;
-// console.log(typeof value);
-// const newValue = String(value);
-// console.log(typeof newValue);
-
-// ---Number--- //
-
-// value = "123";
-// console.log(typeof value);
-
-// const newValue = Number(value);
-// console.log(typeof newValue);
-
-// const test = Number("qwerty");
-// console.log(test);
-// console.log(typeof value);
-
-// ---Boolean--- //
-
-// Правила перетворення:
-
-// Значення, які інтуїтивно “порожні”, такі як 0,
-// порожній рядок, null, undefined та NaN, стають false.
-// Інші значення стають true.
-
-// console.log(Boolean(1)); // true
-// console.log(Boolean(0)); // false
-
-// console.log(Boolean("вітаю")); // true
-// console.log(Boolean("")); // false
-
-// console.log(Boolean(NaN));
-// console.log(Boolean(null));
-
-// ----------------------------------//
-// ----------------------------------//
-// Оператори
-// ----------------------------------//
-// ----------------------------------//
-
-//Терміни: “унарний”, “бінарний”, “операнд”
-
-//Операнд – це те, до чого застосовуються оператори.
-//Наприклад, у множенні 5 * 2 є два операнди: лівий операнд 5 і правий операнд 2.
-//Іноді їх називають “аргументами”
-
-//Оператор є унарним, якщо він має один операнд
-//let x = 1;
-
-//x = -x;
-
-//Оператор є бінарним, якщо він має два операнди
-
-// let x = 1, y = 3;
-// alert( y - x );
-
-//JavaScript підтримує такі математичні операції:
-
-// Додавання +,
-// Віднімання -,
-// Множення *,
-// Ділення /,
-// Остача від ділення %,
-// Піднесення до степеня **.
-
-// // // Додавання
-// console.log(2 + 2);
-
-// // // Віднімання
-// console.log(10 - 4);
-
-// // // Множення
-// console.log(5 * 5);
-
-// // // Ділення
-// console.log(6 / 2);
-
-//Остача від ділення %
-
-// console.log(8 % 3);
-// console.log(10 % 3);
-// console.log(10 % 2);
-
-//Піднесення до степеня **
-
-// console.log(5 ** 2);
-// console.log(4 ** 4);
-
-// -------Оператори порівняння------//
-
-// результатом вертають буль
-
-// a > b и a < b //- більше/меньше
-// a >= b и a <= b  //- більше/меньше або дорівнює
-// a == b //- дорівнює
-// a != b //- не дорівнює
-// a === b //- строго дорівнює
-// a !== b //- строго не дорівнює
-
-// == приведення до типу
-
-// ----------------------------------//
-// ----------------------------------//
-// or -and -not //
-// ----------------------------------//
-// ----------------------------------//
-
-//   -----and (&&)------  //
-
-// console.log(5 === 6 && 6 > 3);
-// console.log(6 + 3 >= 9 && 8 + 1 === 9);
-
-//   -----or (||)------ //
-
-// console.log(5 * 5 === 25 || 2 * 2 === 6);
-
-//   -----not (!) ------ //
-
-// console.log(!false);
-
-// ----------------------------------//
-// ----------------------------------//
-// Умови if/else
-// ----------------------------------//
-// ----------------------------------//
-
-//--- одинарні
-// if (5 * 5 === 25) {
-//   console.log("1");
-// } else {
-//   console.log("2");
+// let zminna = '1';
+// if (zminna > 0) {
+//   console.log('true');
+// } else if (zminna <= 0) {
+//   console.log('false');
 // }
 
-// if (2 + 2 === 6) {
-//   console.log("Hello");
-// } else {
-//   console.log("No Hello");
+// Якщо змінна ="test" - виведіть true,
+//Перевірте це на варіантах  'test', "qwerty", true
+
+// let zminna = 'qwerty';
+// if ((zminna = 'test')) {
+//   console.log('true');
 // }
 
-/// ------Тернарний оператор------///
+// Якщо змінна більше 10 -  відніміть 5,
+//менше - додайте 5, результат виведіть в консоль
+//Перевірте це на варіантах  1, 10, 13.
 
-// 2 + 2 === 4 ? console.log("1") : console.log("2");
-// 5 * 5 === 24 ? console.log(true) : console.log(false);
-
-// if (5 + 5 === 10) {
-//   console.log("5+5 ===10");
-// } else if (2 + 2 === 4) {
-//   console.log("2+2 ===4");
-// } else {
-//   console.log("no");
+// let zminna = 4;
+// if (zminna > 10) {
+//   console.log(zminna - 5);
+// } else if (zminna < 10) {
+//   console.log(zminna + 5);
 // }
 
-// let leng = "ua";
+//Зробіть сервіс який отримує число від 1 до 12
+// виведіть місяць який дорівнює числу
 
-// if (leng === "ua") {
-//   console.log("Понеділок");
-// } else if (leng === "en") {
-//   console.log("Monday");
-// } else {
-//   console.log("Reset");
-// }
-
-// ----------------------------------//
-// ----------------------------------//
-// switch/case
-// ----------------------------------//
-// ----------------------------------//
-
-// let cost = null;
-// const sub = "premium";
-
-// switch (sub) {
-//   case "free":
-//     cost = 0;
+// value = Math.floor(Math.random() * (12 - 1) + 1);
+// let misiac;
+// switch (value) {
+//   case 1:
+//     misiac = 'pershyi misiac';
 //     break;
-
-//   case "pro":
-//     cost = 100;
+//   case 2:
+//     misiac = 'drugyi misiac';
 //     break;
-
-//   case "premium":
-//     cost = 500;
+//   case 3:
+//     misiac = 'tretiy misiac ';
+//     break;
+//   case 4:
+//     misiac = 'chetvertyi misiac';
+//     break;
+//   case 5:
+//     misiac = 'pyatyi misiac';
+//     break;
+//   case 6:
+//     misiac = 'shostyi misiac';
+//     break;
+//   case 7:
+//     misiac = 'siomyi misiac';
+//     break;
+//   case 8:
+//     misiac = 'visim misiac';
+//     break;
+//   case 9:
+//     misiac = 'deviat misiac';
+//     break;
+//   case 10:
+//     misiac = 'desiat misiac';
+//     break;
+//   case 11:
+//     misiac = 'odynatsiar misiac';
+//     break;
+//   case 12:
+//     misiac = 'dwanadtsiat misiac';
+//     break;
 // }
+// console.log(Number.parseInt(value));
+// console.log(misiac);
 
-// console.log(cost);
+//Зробіть сервіс який отримує тризначне число
+//Поверніть користувачу сумму цих чисел
 
-// ----------------------------------//
-// ----------------------------------//
-// Вирішення логічних задач та побудова алгоритмів
-// ----------------------------------//
-// ----------------------------------//
-
-// const min = prompt("Введіть хвилину");
-
-// if (min >= 0 && min <= 14) {
-//   console.log("Перша чверть");
-// } else if (min >= 15 && min <= 29) {
-//   console.log("Друга чверть");
-// } else if (min >= 30 && min <= 44) {
-//   console.log("Третя чверть");
-// } else if (min >= 45 && min <= 59) {
-//   console.log("Четверта чверть");
-// } else {
-//   console.log("ВВедіть іншу цифру");
-// }
-
-const value = prompt('vvedit nazvu towaru').toLowerCase();
-let cost;
-switch (value) {
-  case 'yabluko':
-    cost = 13215;
-    alert(`tovar ${value}, koshuje ${cost} gryven`);
-    break;
-  case 'vyshnia':
-    cost = 1125;
-    alert(`tovar ${value}, koshuje ${cost} gryven`);
-    break;
-  case 'chereshnia':
-    cost = 1125;
-    alert(`tovar ${value}, koshuje ${cost} gryven`);
-    break;
-  case 'pomidor':
-    cost = 1325;
-    alert(`tovar ${value}, koshuje ${cost} gryven`);
-    break;
-  case 'salat':
-    cost = 15455;
-    alert(`tovar ${value}, koshuje ${cost} gryven`);
-    break;
-  case 'morkva':
-    alert(`tovar ${value}, koshuje ${cost} gryven`);
-    cost = 154;
-    break;
-  default:
-    alert(`tovaru ${value}, nema`);
-}
-
-console.log(cost);
-
-// const num = 8;
-
-// num % 2 === 0 ? console.log(true) : console.log(false);
+// value = Math.floor(Math.random() * (9 - 1) + 1);
+// shmeliu = Math.floor(Math.random() * (9 - 1) + 1);
+// deliu = Math.floor(Math.random() * (9 - 1) + 1);
+// console.log(value);
+// console.log(shmeliu);
+// console.log(deliu);
+// console.log(value + shmeliu + deliu);
